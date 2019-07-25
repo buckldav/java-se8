@@ -1,6 +1,7 @@
 package com.buckley;
-import com.buckley.unit1.*;
-import com.buckley.unit2.*;
+import com.buckley.basics.*;
+import com.buckley.classes.*;
+import com.buckley.exceptions.Exceptions;
 
 
 /**
@@ -11,7 +12,19 @@ public class App
 {
     public static void main( String[] args )
     {
-        new Unit1().run();
-        new Unit2().run();
+        // Exceptions
+        new Exceptions().exceptions();
+
+        // Basics
+        new Variables().scopeAndMethods();
+        DataTypes dt = new DataTypes();
+        dt.primitiveTypes();
+        dt.arrays();
+
+        // Classes
+        Inheritance inher = new Inheritance();
+        inher.bicycles();
+        JavaAPI javaAPI = new JavaAPI();
+        javaAPI.stringBuilder();        
     }
 }

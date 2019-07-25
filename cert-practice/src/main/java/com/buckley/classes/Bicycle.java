@@ -1,6 +1,6 @@
-package com.buckley.unit2;
+package com.buckley.classes;
 
-public class Bicycle {
+class Bicycle {
         
   // the Bicycle class has three fields
   public int cadence;
@@ -8,7 +8,7 @@ public class Bicycle {
   public int speed;
       
   // the Bicycle class has one constructor
-  public Bicycle(int startCadence, int startSpeed, int startGear) {
+  Bicycle(int startCadence, int startSpeed, int startGear) {
       gear = startGear;
       cadence = startCadence;
       speed = startSpeed;

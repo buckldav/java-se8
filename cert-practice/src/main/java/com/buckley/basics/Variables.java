@@ -1,4 +1,4 @@
-package com.buckley.unit1;
+package com.buckley.basics;
 
 /**
  * Variables
@@ -16,12 +16,12 @@ package com.buckley.unit1;
  * For constants, UPPERCASE_WITH_UNDERSCORES
  * Begin variables with a letter, not a $ or _
  */
-class Variables 
+public class Variables 
 {
   private String field;
   static final String STATIC_FINAL_FIELD = "This is a static field";
 
-  Variables() {
+  public Variables() {
     field = "This is a field, aka a variable";
   }
 
@@ -34,6 +34,13 @@ class Variables
   void methodWithParams(String param1) {
     // local int not accessible here
     System.out.println(param1);
+  }
+
+  public void scopeAndMethods() {
+    System.out.println("\n*** Variables ***");
+    localVariables();
+    methodWithParams("This is a parameter passed into a method");
+    System.out.println(Variables.STATIC_FINAL_FIELD);
   }
     
 }
